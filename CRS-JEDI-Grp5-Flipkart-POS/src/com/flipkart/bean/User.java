@@ -2,46 +2,71 @@ package com.flipkart.bean;
 import java.util.*;
 
 public class User {
-	
-	String username;
-	String password;
-	
-	public String getUsername() {
-		return username;
-	}
+    private String email;
+    private String password;
+    private String name;
+    private String role;
+    private String joinDate;
+    private String contactNum;
+    private String address;
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    public User(String email, String password, String name, String role, String joinDate, String contactNum, String address){
+        this.email = email;
+        this.password = password;
+        this.name = name;
+        this.role = role;
+        this.joinDate = joinDate;
+        this.contactNum = contactNum;
+        this.address = address;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public User(){
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	
-	public boolean checkLoginDetails() {
-			
-		if (username.equals("nikita") && password.equals("hey")) {
-			return true;
-		}
-		
-		else {
-			return false;
-		}
-	}
-	
-	public void getUserDetails() {
-		System.out.println("Enter username");
-		Scanner s = new Scanner(System.in);
-		username = s.nextLine();
-		
-		
-		System.out.println("Enter password");
-		password = s.nextLine();
-		
-		
-	}
+    }
+
+    public void setEmail(String email){
+        this.email = email;
+    }
+    public String getEmail(){
+        return email;
+    }
+
+    public void setPassword(String password){
+        this.password = password;
+    }
+
+    public String getPassword(){
+        return password;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setRole(String role){
+        this.role = role;
+    }
+    public String getRole(){
+        return role;
+    }
+    public void setJoinDate(String joinDate){
+        this.joinDate = joinDate;
+    }
+    public String getJoinDate(){
+        return joinDate;
+    }
+    public void setContactNum(String contactNum){
+        this.contactNum = contactNum;
+    }
+    public String getContactNum(){
+        return contactNum;
+    }
+    public void setAddress(String address){
+        this.address = address;
+    }
+    public String getAddress(){
+        return address;
+    }
 }
