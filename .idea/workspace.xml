@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="133bb8d8-38f1-4f01-bbb2-b3f46f84cae7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/app/AdminCRSMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/app/AdminCRSMenu.java" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/bean/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/bean/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/bean/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/bean/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/service/ProfessorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/service/RegistrationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRS-JEDI-Grp5-Flipkart-POS/src/com/flipkart/service/UserService.java" beforeDir="false" />
+>>>>>>> dfa90a1b0b748b9c74bbe61ae7b76d62f5c34b35
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +38,16 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "last_opened_file_path": "/Users/arpita.dash/JEDI-grp5-FLIPKART-s22"
+=======
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "/Users/harsh.sharma8/Documents/JEDI-grp5-FLIPKART-s22",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+>>>>>>> dfa90a1b0b748b9c74bbe61ae7b76d62f5c34b35
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

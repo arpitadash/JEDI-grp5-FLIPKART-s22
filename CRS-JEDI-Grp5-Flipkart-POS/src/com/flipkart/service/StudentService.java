@@ -1,5 +1,9 @@
 package com.flipkart.service;
 
-public class StudentService {
+public interface StudentService {
+	
+	public String register(); 
 
+	public String viewGrades();
+	
 }
