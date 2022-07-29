@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class CRSApplication {
 	static boolean loggedin = false;
 	Course course = new Course();
-	Map<Integer, course> map = new HashMap<String, course>();
+	Map<Integer, Course> map = new HashMap<String, course>();
     Scanner scanner = new Scanner(System.in);
 	
 	public static void main(String[]args) {

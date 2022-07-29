@@ -1,5 +1,7 @@
 package com.flipkart.app;
 
+import com.flipkart.bean.Course;
+
 import java.util.*;
 
 public class AdminCRSMenu{
@@ -90,7 +92,7 @@ public class AdminCRSMenu{
 //        // fetch Students information
 //
 //        ArrayList<String> pendingstudents = new ArrayList<>();
-////        pendingstudents = ao.viewPendingStudentApproval();
+////        pendingstudents = adminCRSMenu.viewPendingStudentApproval();
 //        int i;
 //        System.out.println("check");
 //        for (i = 0; i<pendingstudents.size(); i++) {
@@ -100,7 +102,7 @@ public class AdminCRSMenu{
 //            int stat = sc.nextInt();
 //            sc.nextLine();
 //            if(stat == 1){
-//                ao.approveStudentRegistration(studID);
+//                adminCRSMenu.approveStudentRegistration(studID);
 //                pendingstudents.remove(i);
 //                i--;
 //            }
@@ -115,8 +117,28 @@ public class AdminCRSMenu{
 //        return;
 //
 //    }
-    private void cancelCourseRegistration(){
-
+    private void cancelCourseRegistration(Map<Integer, Course> map){
+        // Create  a student ID list at the course module
+        // For loop through existing courses -
+        // check their current seats
+        // if seats filled < 3 -> cancel course, send message to students
+        // also delete existing registeredCourse instances of those students
+        ArrayList<Integer> keysToBeDeleted = new ArrayList<Integer>(); // store keys to be deleted
+        for (Map.Entry<Integer, Course> entry : map.entrySet()) { // Iterate through the courses stored in the map
+            Integer key = entry.getKey();
+            Course value = entry.getValue();
+            if (value.getNumberOfSeats() > 7) { // Check if the number of seats REMAINING after course registration in the course is < 3
+                //cancel the course
+                //store the key value in a list to remove from hashmap
+                keysToBeDeleted.add(key);
+            })
+            System.out.println("Deleted courseas are: \n");
+            for (int k : keysToBeDeleted) {
+                returned_val = (String) map.remove(k);
+                System.out.println(returned_val);
+                //Need to add function to alert students so they can do apply for another course
+            }
+        }
     }
     /**
      *
@@ -125,8 +147,8 @@ public class AdminCRSMenu{
 
     private void viewCourseStudentList(){
         System.out.println("Please enter Course ID to view Student List");
-        String courseID = sc.nextLine();
-        ArrayList<String> course_students = ao.viewCourseStudentList(courseID);
+        String courseID = scanner.nextLine();
+        ArrayList<String> course_students = adminCRSMenu.viewCourseStudentList(courseID);
         System.out.println("Here is the list of students registered in course: " + courseID);
         for (String st:course_students){
             System.out.println("Student ID: " + st);
@@ -145,7 +167,7 @@ public class AdminCRSMenu{
     private void viewCourseGrades(){
         System.out.println("Please enter Course ID to view Grades");
         String courseID = sc.nextLine();
-        ArrayList<ArrayList<String>> courseGrades = ao.viewCourseGrades(courseID);
+        ArrayList<ArrayList<String>> courseGrades = adminCRSMenu.viewCourseGrades(courseID);
         System.out.println("Here is the grade of students registered in course: " + courseID);
         for (ArrayList<String> i: courseGrades){
             System.out.println("Student ID: " + i.get(0) + "Grade: " + i.get(1));
@@ -162,8 +184,7 @@ public class AdminCRSMenu{
 
     public void generateGradeCard() {
         //System.out.println("Please enter semester for which gradecard needs to be generated");
-        //String semester= sc.nextLine();
-        ao.generateGradeCard();
+        //String semester= sc.nextLine(); adminCRSMenu.generateGradeCard();
         System.out.println("Grade Cards generated successfully, now available for students to view!");
     }
 }
