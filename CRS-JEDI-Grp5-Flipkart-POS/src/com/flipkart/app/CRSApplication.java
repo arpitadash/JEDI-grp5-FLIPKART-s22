@@ -5,11 +5,7 @@ import com.flipkart.service.*;
 public class CRSApplication {
 	static boolean loggedin = false;
 	Course course = new Course();
-<<<<<<< HEAD
 	Map<Integer, Course> map = new HashMap<String, course>();
-=======
-    public static HashMap<String,Course> map = new HashMap<String,Course>();
->>>>>>> dfa90a1b0b748b9c74bbe61ae7b76d62f5c34b35
     Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[]args) {
